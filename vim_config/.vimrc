@@ -1,7 +1,45 @@
 set runtimepath+=~/.vim_runtime
 
+" Vundle
+" set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'rip-rip/clang_complete'
+Plugin 'itchyny/lightline.vim'
+"Plugin 'neoclide/coc.nvim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+"
+" clang_complete
+" path to directory where library can be found
+ let g:clang_library_path='/usr/lib/llvm-6.0/lib'
+ " or path directly to the library file
+ let g:clang_library_path='/usr/lib/x86_64-linux-gnu/libclang-6.0.so.1'
 
 source ~/.vim/autoload/plug.vim
+"source ~/.vim_runtime/vimrcs/coc.vim
 source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/filetypes.vim
 source ~/.vim_runtime/vimrcs/plugins_config.vim
@@ -32,3 +70,6 @@ set expandtab
 
 " enable mouse
 set mouse=a
+
+" relative line numbers useful for multiline operations
+set relativenumber

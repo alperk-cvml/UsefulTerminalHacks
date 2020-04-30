@@ -1,7 +1,7 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/usr/local/driveworks-2.2/targets/x86_64-Linux/include/dw'
-let g:netrw_dirhist_2='/home/kuartis'
-let g:netrw_dirhist_3='/usr/local/driveworks-2.2/include'
-let g:netrw_dirhist_4='/usr/local/driveworks-2.2/lib'
-let g:netrw_dirhist_5='/home/kuartis/workspace/multiple_dw/hello_world/CMakeFiles'
+let g:netrw_dirhist_1='/home/kuartis/workspace'
+let g:netrw_dirhist_2='/home/kuartis/workspace/gstreamer'
+let g:netrw_dirhist_3='/usr/local/driveworks-2.2/targets/x86_64-Linux/include/dw/core'
+let g:netrw_dirhist_4='/usr/local/driveworks-2.2/targets/x86_64-Linux/include/dw'
+let g:netrw_dirhist_5='/usr/local/driveworks-2.2/targets/x86_64-Linux/include/dw/image'
