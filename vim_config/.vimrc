@@ -13,9 +13,10 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'rip-rip/clang_complete'
+"Plugin 'rip-rip/clang_complete'
 Plugin 'itchyny/lightline.vim'
 "Plugin 'neoclide/coc.nvim'
+Plugin 'zxqfl/tabnine-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -51,7 +52,11 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry
 
+
+
+" enable line numbers
 set number
+
 
 
 set termguicolors     " enable true colors support
@@ -73,3 +78,21 @@ set mouse=a
 
 " relative line numbers useful for multiline operations
 set relativenumber
+
+" the following script is for
+" do not yank when putting 
+" thanks to https://stackoverflow.com/questions/290465/how-to-paste-over-without-overwriting-register
+" I haven't found how to hide this function (yet)
+function! RestoreRegister()
+  let @" = s:restore_reg
+  return ''
+endfunction
+
+function! s:Repl()
+    let s:restore_reg = @"
+    return "p@=RestoreRegister()\<cr>"
+endfunction
+
+" NB: this supports "rp that replaces the selection by the contents of @r
+vnoremap <silent> <expr> p <sid>Repl()
+
