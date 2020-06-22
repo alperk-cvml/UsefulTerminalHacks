@@ -17,6 +17,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
 "Plugin 'neoclide/coc.nvim'
 Plugin 'zxqfl/tabnine-vim'
+" added nerdtree
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -44,7 +46,7 @@ source ~/.vim/autoload/plug.vim
 source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/filetypes.vim
 source ~/.vim_runtime/vimrcs/plugins_config.vim
-source ~/.vim_runtime/vimrcs/extended.vim
+"source ~/.vim_runtime/vimrcs/extended.vim
 source ~/.vim_runtime/mru/mru.vim
 
 try
@@ -96,3 +98,5 @@ endfunction
 " NB: this supports "rp that replaces the selection by the contents of @r
 vnoremap <silent> <expr> p <sid>Repl()
 
+"let NERDTreeWinSize = 15
+nmap <F6> :NERDTreeToggle<CR>
