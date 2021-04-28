@@ -100,3 +100,6 @@ vnoremap <silent> <expr> p <sid>Repl()
 
 "let NERDTreeWinSize = 15
 nmap <F6> :NERDTreeToggle<CR>
+
+let NERDTreeShowHidden=1
+
