@@ -68,9 +68,9 @@ colorscheme ayu
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
-set tabstop=4
+set tabstop=2
 " when indenting with '>', use 4 spaces width
-set shiftwidth=4
+set shiftwidth=2
 " On pressing tab, insert 4 spaces
 set expandtab
 
@@ -102,4 +102,6 @@ vnoremap <silent> <expr> p <sid>Repl()
 nmap <F6> :NERDTreeToggle<CR>
 
 let NERDTreeShowHidden=1
+
+set clipboard=unnamedplus
 
