@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/kuartis/workspace'
 let g:netrw_dirhist_2='/home/kuartis/workspace/gstreamer'
 let g:netrw_dirhist_3='/usr/local/driveworks-2.2/targets/x86_64-Linux/include/dw/core'
 let g:netrw_dirhist_4='/usr/local/driveworks-2.2/targets/x86_64-Linux/include/dw'
 let g:netrw_dirhist_5='/usr/local/driveworks-2.2/targets/x86_64-Linux/include/dw/image'
+let g:netrw_dirhist_6='/home/kuartis/cross/AGX/drive_10.0/DRIVE_Software_10.0_Linux_OS_E3550/DRIVEOS/drive-t186ref-linux/targetfs_a/opt/nvidia/nvcam/apps/nvcs/examples'
+let g:netrw_dirhist_7='/home/kuartis/git/kilavuz'
